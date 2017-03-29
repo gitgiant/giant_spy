@@ -1,6 +1,31 @@
 import threading
 
-# TODO implement threading
+print("""
+              ;xkdddxkk0KKOl.
+             ;KMMMMMMMMMMMMW0;
+            ,0MMMMMMMMMMMMMMMXc
+           .xWMMMMMMMMMMMMMMMMK;
+       ..';dNMMMMMMMMMMMMMMMMMMk.
+ .';coxOKXWWMMMMMMMMMMMMMMMMMMMNo.
+ .,;;;::ckNMMMMMMMMMMMMMNKKXNMMMNx;.
+      ,oxKWMMMMMMMMMMMMWO:,';xXNKKKOo,.
+      .lKWMMMMMMMMMMMMMMWN0d;,xXc..;clc,.
+        ,kWMMMMMMMMMMMMMMMMMWXNW0l:.   ..
+         .dNMMMMMMMMMMMMMMMMMMMMMWx.
+          cXMMMMMMMMWNX0KXWWMMMMWk.
+        .dNMMMMMMMMMWWNKkl:cdOXWK;
+       ;OWMMMMMMMMMMMMMMWKd:...:;.
+      :XMMMMMMMMMMMMMMMMMMMW0l'.
+      '0MMMMMMMMMMMMMMMMMMMMMWKx:.
+      'OMMMMMMMMMMMMMMMMMMMMMMMWXx'
+      lNMMMMMMMMMMMMMMMMMMMMMMMMWNk'
+_________________________________________
+ Keylogger/Mouselogger/Screenshotter v.1
+         www.github.com/gitgiant
+        Please don't use for evil
+""")
+# TODO: implement threading, make invisible, implement verbose/mousehook logging, capture png instead of bitmap
+# TODO: set up exfiltration of logs (encrpyt?), track present window, caps and caps lock, fix backspace, persistent
 if __name__ == '__main__':
     while True:
         print("Please select from the following options:")
