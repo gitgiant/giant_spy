@@ -8,20 +8,20 @@ win32gui.ShowWindow(window,0)
 
 def OnKeyboardEvent(event):
 
-    print('MessageName:',event.MessageName)
-    print('Message:',event.Message)
+    #print('MessageName:',event.MessageName)
+    #print('Message:',event.Message)
     print('Time:',event.Time)
-    print('Window:',event.Window)
+    #print('Window:',event.Window)
     print('WindowName:',event.WindowName)
-    print('Ascii:', event.Ascii, chr(event.Ascii))
+    #print('Ascii:', event.Ascii, chr(event.Ascii))
     print('Key:', event.Key)
-    print('KeyID:', event.KeyID)
-    print('ScanCode:', event.ScanCode)
-    print('Extended:', event.Extended)
-    print('Injected:', event.Injected)
-    print('Alt', event.Alt)
-    print('Transition', event.Transition)
-    print('---')
+    #print('KeyID:', event.KeyID)
+    #print('ScanCode:', event.ScanCode)
+    #print('Extended:', event.Extended)
+    #print('Injected:', event.Injected)
+    #print('Alt', event.Alt)
+    #print('Transition', event.Transition)
+    #print('---')
 
     # TODO cleanup and handle output
     # TODO check for when WindowName has changed.
